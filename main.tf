@@ -8,7 +8,7 @@ module "single_virtual_machine" {
   for_each               = var.vm_config
   source                 = "app.terraform.io/tfo-apj-demos/single-virtual-machine/vsphere"
   version                = "1.6.2"
-  fallback_template_name = "base-rhel-9-20250501083042_vtpm"
+  fallback_template_name = "base-rhel-9-202512030851321764751895"
 
   hostname           = each.value.hostname
   ad_domain          = each.value.ad_domain
